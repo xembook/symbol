@@ -35,6 +35,7 @@ inline struct MultisigAccountModificationTransactionBody
 	modifications_count = uint32
 
 	# multisig account modifications
+	@sort_key(modification)
 	modifications = array(SizePrefixedMultisigAccountModification, modifications_count)
 
 # shared content between V1 verifiable and non-verifiable multisig account transactions
