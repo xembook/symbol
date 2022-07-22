@@ -14,7 +14,7 @@ inline struct HashLockTransactionBody
 	hash = Hash256
 
 #
-# node's partial cache while
+# node's 
 
 struct HashLockTransaction
 	TRANSACTION_VERSION = make_const(uint8, 1)
