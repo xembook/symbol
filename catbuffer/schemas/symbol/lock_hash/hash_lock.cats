@@ -13,8 +13,6 @@ inline struct HashLockTransactionBody
 	# Hash of the AggregateBondedTransaction to be confirmed before unlocking the mosaics.
 	hash = Hash256
 
-
-# Lock a deposit needed to announce an AggregateBondedTransaction.
 #
 # An AggregateBondedTransaction consumes network resources as it is stored in every node's partial cache while
 # it waits to be fully signed. To avoid spam attacks a HashLockTransaction must be announced and confirmed
