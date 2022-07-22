@@ -14,6 +14,10 @@ inline struct HashLockTransactionBody
 	hash = Hash256
 
 
+#
+# \note It is not necessary to sign the aggregate and its HashLockTransaction with the same account.
+# For example, if Bob wants to announce an aggregate and does not have enough funds to announce a HashLockTransaction,
+# he can ask Alice to announce the lock transaction for him by sharing the signed AggregateTransaction hash.
 struct HashLockTransaction
 	TRANSACTION_VERSION = make_const(uint8, 1)
 	TRANSACTION_TYPE = make_const(TransactionType, HASH_LOCK)
