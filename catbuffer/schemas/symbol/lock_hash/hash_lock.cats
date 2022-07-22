@@ -14,7 +14,7 @@ inline struct HashLockTransactionBody
 	hash = Hash256
 
 #
-# An AggregateBondedTransaction consumes network resources as it is stored in every node's partial cache while
+# node's partial cache while
 
 struct HashLockTransaction
 	TRANSACTION_VERSION = make_const(uint8, 1)
